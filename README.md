@@ -5,6 +5,7 @@ This project demonstrates an end-to-end data processing pipeline using Apache Sp
 It performs data cleaning, transformation, and analytics on eCommerce datasets to derive insights on sales, customers, and products.
 The goal is to showcase industry-grade ETL development with Spark and GitHub portfolio readiness.
 
+--- 
 
 ## 🏗️ Architecture
  ```text
@@ -14,6 +15,7 @@ flowchart LR
   C -->|Write| D[(HDFS / Delta Tables)]
   D -->|Consume| E[Analytics & BI Tools]
  ```
+-----
 
 ## Technology Stack
 - **Apache Spark (PySpark)** – For data processing and transformations
@@ -22,7 +24,8 @@ flowchart LR
 - **Hadoop/HDFS** (optional) – For raw and processed data storage
 - **GitHub** – For project version control and showcasing
 
-  
+----
+
 ## 🗂️Project Structure
  ```text
 .
@@ -54,8 +57,9 @@ flowchart LR
 └── requirements.txt
 
  ```
+---- 
 
-## Dataset
+## 📊Dataset
 The project uses the Olist eCommerce dataset split into 9 CSV files (folder: DataSet/). They cover the full sales lifecycle from order placement to delivery and review.
 | Domain         | File(s)                                 | Purpose                            |
 | -------------- | --------------------------------------- | ---------------------------------- |
@@ -70,6 +74,7 @@ The project uses the Olist eCommerce dataset split into 9 CSV files (folder: Dat
 | Category Names | `product_category_name_translation.csv` | PT→EN category name mapping        |
 
 
+-----
 
 ## 📜Project Workflow
 
@@ -94,26 +99,31 @@ The project uses the Olist eCommerce dataset split into 9 CSV files (folder: Dat
 - Monthly sales and revenue trends.
 - Revenue per product category.
 
+------
+
 ## 📦Output Storage
 - Curated datasets written to Delta/Parquet (optionally to HDFS) under paths like:
    - processed/monthly_sales/
    - processed/top_products/
    - processed/top_customers/.
 
+------
 
-## Challenges
+## 🛠️Challenges
 - Efficient processing of large datasets in Spark.
 - Cleaning null, missing, or malformed data.
 - Maintaining schema consistency during transformations.
 
+-----
 
-## Key Learning Outcomes
+## 🎯Key Learning Outcomes
 - Hands-on experience with **PySpark DataFrame API**.
 - Implementing **end-to-end Spark ETL pipelines**.
 - Managing **real-world eCommerce datasets**.
 - Data transformation, aggregation, and scalable processing in Spark.
 - Joining multi-table eCommerce data and producing analytics-ready marts.
 
+------
 
 ## 🔭 Future Improvements
 - Streaming ingestion (Kafka) for near real-time processing.
@@ -123,8 +133,11 @@ The project uses the Olist eCommerce dataset split into 9 CSV files (folder: Dat
 - BI: Connect to Power BI/Tableau for dashboards.
 - Tests: Add unit tests for transformations (e.g., pytest).
 
+-----
+
  ## 📄 License
 This project is licensed under the MIT License. See LICENSE for details.
+
 
 
 
