@@ -7,11 +7,13 @@ The goal is to showcase industry-grade ETL development with Spark and GitHub por
 
 
 ## 🏗️ Architecture
+ ```text
 flowchart LR
   A[Raw E‑Commerce Data (CSV/JSON)] -->|Load| B[(Spark on Databricks)]
   B -->|Clean & Transform| C[Processed Data]
   C -->|Write| D[(HDFS / Delta Tables)]
   D -->|Consume| E[Analytics & BI Tools]
+ ```
 
 ## Technology Stack
 - **Apache Spark (PySpark)** – For data processing and transformations
@@ -123,5 +125,6 @@ The project uses the Olist eCommerce dataset split into 9 CSV files (folder: Dat
 
  ## 📄 License
 This project is licensed under the MIT License. See LICENSE for details.
+
 
 
